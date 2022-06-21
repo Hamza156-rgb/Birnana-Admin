@@ -1,0 +1,40 @@
+h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+
+    padding-left: 10px;
+
+    color: #171930;
+}
+p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 10px;
+
+    color: #171930;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.otp {
+    color: darkgray;
+    border-style: none;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+}
+
+td {
+    border: 2px solid darkgray;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+

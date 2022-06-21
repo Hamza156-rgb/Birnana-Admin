@@ -11,5 +11,7 @@ export class VerificationPage implements OnInit {
 
   ngOnInit() {
   }
-
+  next(el) {
+    el.setFocus();
+  }
 }

@@ -1,9 +1,58 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>verification</ion-title>
+    <ion-icon name="chevron-back-outline" style="font-size: 40px;"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <div class="ion-padding">
+    <h2>
+      Enter verification code
+    </h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+      sed diam nonumy eirmod tempor invidunt ut labore et.
+    </p>
+  </div>
+
+  <ion-row class="ion-padding">
+    <ion-col size="2"></ion-col>
+    <ion-col size="10">
+      <table>
+        <tr>
+          <td>
+            <ion-input type="text" #otp1 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp2)">
+            </ion-input>
+          </td>
+          <td>
+            <ion-input type="text" #otp2 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp3)">
+            </ion-input>
+          </td>
+          <td>
+            <ion-input type="text" #otp3 class="otp" pattern="[0-9]{6}" maxlength="1" size="1" (keyup)="next(otp4)">
+            </ion-input>
+          </td>
+          <td>
+            <ion-input type="text" #otp4 class="otp" pattern="[0-9]{6}" maxlength="1" size="1">
+            </ion-input>
+          </td>
+        </tr>
+      </table>
+    </ion-col>
+
+    <ion-col size="2"></ion-col>
+  </ion-row>
+
+  <ion-row class="ion-padding">
+
+    <ion-col size="12">
+      <ion-button mode="ios" color="secondary" size="large" style="width: 100%;" [routerLink]="['/phone-registration']">
+        confirm
+      </ion-button>
+    </ion-col>
+
+  </ion-row>
 
 </ion-content>
