@@ -1,0 +1,7 @@
+{
+  "name": "birnanaAdmin",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
