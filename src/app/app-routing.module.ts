@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'store-profile2',
     loadChildren: () => import('./store-profile2/store-profile2.module').then( m => m.StoreProfile2PageModule)
   },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
 ];
 
 @NgModule({

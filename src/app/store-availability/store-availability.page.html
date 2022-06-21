@@ -1,9 +1,76 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>storeAvailability</ion-title>
+    <ion-icon name="chevron-back-outline" style="font-size: 40px;" [routerLink]="['/phone-registration']"></ion-icon>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+
+
+
+  <div class="ion-padding">
+
+
+    <h2>
+      Set Availabiity
+    </h2>
+
+    <p class="ion-padding-top">
+      Lorem ipsum dolor sit amet, consetetur sadipscing,
+      lorem ipsum dolorsed diam nonumy amet eirmod.
+    </p>
+  </div>
+
+  <ion-row>
+    <ion-col size="12" class="ion-padding">
+
+
+      <ion-input placeholder="Set Open Time">
+        <ion-icon name="time" style="color: #6ABAD6;font-size: 20px;padding-left: 1%;"></ion-icon>
+      </ion-input>
+
+
+    </ion-col>
+
+    <ion-col size="12" class="ion-padding">
+
+
+      <ion-input placeholder="Set Close Time">
+        <ion-icon name="time" style="font-size: 20px;padding-left: 1%;"></ion-icon>
+      </ion-input>
+
+
+    </ion-col>
+
+
+    <ion-col size="12" class="ion-padding">
+
+
+      <ion-input placeholder="Set Your Working Days">
+        <ion-icon name="time" style="font-size: 20px;padding-left: 1%;"></ion-icon>
+      </ion-input>
+
+
+    </ion-col>
+
+
+  </ion-row>
+
+
+
+  <ion-row class="ion-padding">
+
+    <ion-col size="12">
+      <ion-button mode="ios" color="secondary" size="large" style="width: 100%;" [routerLink]="['/dashboard']">
+        Next
+      </ion-button>
+      <h6 class="ion-text-end" [routerLink]="['/dashboard']">
+        Skip
+      </h6>
+    </ion-col>
+
+  </ion-row>
+
+
+ 
 
 </ion-content>
