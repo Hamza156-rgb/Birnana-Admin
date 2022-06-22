@@ -32,7 +32,7 @@
 
     <ion-col size="6">
       <ion-card style="background: #0081F7;
-      border-radius: 15px;">
+      border-radius: 15px;"  [routerLink]="['/products']">
         <ion-card-header>
           <ion-img src="../assets/dashboard/2.png" style="width: 50%;"></ion-img>
         </ion-card-header>
@@ -53,7 +53,7 @@
     
     <ion-col class="ion-padding" size="3">
       <ion-tab-button tab="caregivers">
-        <ion-icon name="home-outline" style="font-size:30px; color: #0081F7;" [routerLink]="['/main-page']"></ion-icon>
+        <ion-icon name="home-outline" style="font-size:30px; color: #0081F7;" [routerLink]="['/dashboard']"></ion-icon>
       </ion-tab-button>
 
     </ion-col>
@@ -66,13 +66,13 @@
 
     <ion-col class="ion-padding" size="3">
       <ion-tab-button tab="">
-        <ion-icon name="medkit-outline" style="font-size:30px " [routerLink]="['/categories']"></ion-icon>
+        <ion-icon name="medkit-outline" style="font-size:30px " [routerLink]="['/addproduct']"></ion-icon>
       </ion-tab-button>
 
     </ion-col>
     <ion-col class="ion-padding" size="3">
       <ion-tab-button tab="">
-        <ion-icon name="person-outline" style="font-size:30px" [routerLink]="['/shopping-cart']"></ion-icon>
+        <ion-icon name="person-outline" style="font-size:30px" [routerLink]="['/account']"></ion-icon>
       </ion-tab-button>
 
     </ion-col>

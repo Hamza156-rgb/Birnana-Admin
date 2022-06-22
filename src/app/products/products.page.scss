@@ -1,0 +1,58 @@
+h3 {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #c4c4c4;
+}
+h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+}
+.line {
+    display: flex;
+    background: rgba(47, 169, 78, 0.4);
+    opacity: 0.5;
+    border-radius: 8px;
+    width: 60%;
+}
+.lines {
+    display: flex;
+    background: rgba(0, 129, 247, 0.4);
+    opacity: 0.5;
+    border-radius: 8px;
+    width: 60%;
+    margin-left: 40%;
+}
+.green{
+color:#2FA94E;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+}
+.arrow{
+    color: #2FA94E;
+}
+.arrows{
+    color: #0081F7;
+}
+.blue{
+    color: #0081F7; 
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+}

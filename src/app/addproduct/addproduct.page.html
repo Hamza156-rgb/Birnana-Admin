@@ -1,9 +1,111 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>addproduct</ion-title>
+    <ion-icon class="ion-padding" name="chevron-back-outline" style="font-size: 40px;  color: black;"
+      [routerLink]="['/search']"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <div class="ion-padding">
+    <h3>Add Product</h3>
+
+    <p>Add Product Images</p>
+
+  </div>
+
+
+  <ion-segment scrollable value="heart">
+    <ion-segment-button value="home">
+      <ion-card>
+
+        <ion-img src="../assets/addproduct/1.png"></ion-img>
+
+
+      </ion-card>
+    </ion-segment-button>
+    <ion-segment-button value="heart">
+      <ion-card>
+        <ion-img src="../assets/addproduct/1.png"></ion-img>
+
+      </ion-card>
+    </ion-segment-button>
+    <ion-segment-button value="pin">
+      <ion-card>
+        <ion-img src="../assets/addproduct/1.png"></ion-img>
+      </ion-card>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-row class="ion-padding-top">
+    <ion-col size="12" class="ion-padding">
+      <ion-input placeholder="Enter Text">
+        <ion-img src="../assets/addproduct/3.png" style="padding-left: 2%;"></ion-img>
+      </ion-input>
+    </ion-col>
+    <ion-col size="12" class="ion-padding">
+      <ion-textarea placeholder="Write your review here">
+        <ion-icon name="information-circle-outline" class="ion-padding"
+          style="padding-left: 2%;font-size: 25px;color: black;"></ion-icon>
+      </ion-textarea>
+    </ion-col>
+    <ion-col size="12" class="ion-padding">
+      <ion-input placeholder="Enter Text">
+        <ion-icon name="pricetag-outline" style="font-size: 25px;color: #B1B1B1;"></ion-icon>
+      </ion-input>
+    </ion-col>
+    <ion-col size="12" class="ion-padding">
+      <ion-input placeholder="Enter Text">
+        <ion-icon name="pricetag-outline" style="font-size: 25px;color: #B1B1B1;"></ion-icon>
+      </ion-input>
+    </ion-col>
+    <ion-col size="12" class="ion-padding">
+      <ion-button mode="ios" color="secondary" size="large" style="width: 100%;" [routerLink]="['/verification']">
+        Add Product
+      </ion-button>
+    </ion-col>
+  </ion-row>
 </ion-content>
+
+
+
+
+
+
+
+
+<ion-footer mode="ios" style="background-color:white;color:black">
+  <ion-row>
+    
+    <ion-col class="ion-padding" size="3">
+      <ion-tab-button tab="caregivers">
+        <ion-icon name="home-outline" style="font-size:30px; " [routerLink]="['/dashboard']"></ion-icon>
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="3">
+      <ion-tab-button tab="">
+        <ion-icon name="search-outline" style="font-size:30px " [routerLink]="['/search']"></ion-icon>
+      </ion-tab-button>
+
+    </ion-col>
+
+    <ion-col class="ion-padding" size="3">
+      <ion-tab-button tab="">
+        <ion-icon name="medkit-outline" style="font-size:30px  ;color: #0081F7;" [routerLink]="['/addproduct']"></ion-icon>
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="3">
+      <ion-tab-button tab="">
+        <ion-icon name="person-outline" style="font-size:30px" [routerLink]="['/account']"></ion-icon>
+      </ion-tab-button>
+
+    </ion-col>
+   
+  
+  </ion-row>
+
+
+
+
+</ion-footer>

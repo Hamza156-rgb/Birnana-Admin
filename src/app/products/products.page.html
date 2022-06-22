@@ -1,9 +1,141 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>products</ion-title>
+    <ion-icon class="ion-padding" name="chevron-back-outline" style="font-size: 40px;color: black;"
+      [routerLink]="['/dashboard']"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
 
+
+  <ion-row class="ion-padding">
+    <ion-col>
+      <div class="ion-text-start">
+        <h3>Products</h3>
+
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-end">
+        <ion-icon class="ion-padding-top" name="search" style="font-size: 30px;color: black;"></ion-icon>
+        <ion-icon class="ion-padding-top" name="notifications" style="font-size: 30px;color: #1B7CED;"></ion-icon>
+
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-padding">
+    <ion-col>
+      <div class="ion-text-start">
+        <p>Total Products</p>
+        <h2>128</h2>
+        <div class="line">
+          <ion-icon name="arrow-up" class="ion-padding-top arrow" style="padding-left: 5%;"></ion-icon>
+          <h6 style="padding-left: 2%;" class="green">+8.00%</h6>
+        </div>
+
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-end">
+        <p>Total Products</p>
+        <h2>2,350</h2>
+
+        <div class="lines">
+          <ion-icon name="arrow-up" class="ion-padding-top arrows" style="padding-left: 5%;"></ion-icon>
+          <h6 style="padding-left: 2%;" class="blue">+8.00%</h6>
+        </div>
+
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-padding">
+    <ion-col>
+      <div class="ion-text-start">
+        <p>Products List</p>
+
+
+      </div>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row class="ion-padding"  *ngFor="let items of product">
+
+    <ion-col>
+      <div class="ion-text-start">
+        <ion-img  [src]="items.image" style="width:80%;"></ion-img>
+
+      </div>
+    </ion-col>
+    <ion-col>
+
+      <div class="ion-text-center">
+        <h6> {{items.name}}</h6>
+        <div style="display: flex;justify-content: center;">
+          <ion-icon name="caret-up-outline" style="color:#2FA94E;" class="ion-padding-top">
+          </ion-icon>
+          <h6 style="color:#2FA94E">{{items.up}}</h6>
+          <ion-icon name="caret-down-outline" style="color:#E67F1E;" class="ion-padding-top"></ion-icon>
+          <h6 style="color:#E67F1E">{{items.down}}</h6>
+        </div>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-end">
+        <ion-icon name="chevron-forward-outline" slot="end" class="ion-padding-top"
+          style="font-size: 30px;color:black;"></ion-icon>
+      </div>
+    </ion-col>
+
+
+  </ion-row>
+
+
+
+
 </ion-content>
+
+
+
+
+
+
+<ion-footer mode="ios" style="background-color:white;color:black">
+  <ion-row>
+
+    <ion-col class="ion-padding" size="3">
+      <ion-tab-button tab="caregivers">
+        <ion-icon name="home-outline" style="font-size:30px;" [routerLink]="['/dashboard']"></ion-icon>
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="3">
+      <ion-tab-button tab="">
+        <ion-icon name="search-outline" style="font-size:30px " [routerLink]="['/search']"></ion-icon>
+      </ion-tab-button>
+
+    </ion-col>
+
+    <ion-col class="ion-padding" size="3">
+      <ion-tab-button tab="">
+        <ion-icon name="medkit-outline" style="font-size:30px " [routerLink]="['/categories']"></ion-icon>
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="3">
+      <ion-tab-button tab="">
+        <ion-icon name="person-outline" style="font-size:30px" [routerLink]="['/shopping-cart']"></ion-icon>
+      </ion-tab-button>
+
+    </ion-col>
+
+
+  </ion-row>
+
+
+
+
+</ion-footer>

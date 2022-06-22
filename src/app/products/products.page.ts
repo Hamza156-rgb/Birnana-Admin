@@ -12,4 +12,40 @@ export class ProductsPage implements OnInit {
   ngOnInit() {
   }
 
+
+  product = [
+    {
+      'image': '../assets/products/1.png',
+      'name': 'Vegetables',
+      'up': '267',
+      'down': '197'
+    },
+    {
+      'image': '../assets/products/1.png',
+      'name': 'Sweet Food',
+      'up': '267',
+      'down': '197'
+    },
+    {
+      'image': '../assets/products/1.png',
+      'name': 'Snacks',
+      'up': '267',
+      'down': '197'
+    },
+    {
+      'image': '../assets/products/1.png',
+      'name': 'Fruits',
+      'up': '267',
+      'down': '197'
+    },
+    {
+      'image': '../assets/products/1.png',
+      'name': 'Frozen Items',
+      'up': '267',
+      'down': '197'
+    },
+
+  ]
+
+
 }
