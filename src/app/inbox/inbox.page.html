@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inbox</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>
+
+
+
+
+
+
+
+
+<ion-footer mode="ios" style="background-color:white;color:black">
+  <ion-row>
+
+    <ion-col class="ion-padding" size="2.5">
+      <ion-tab-button tab="caregivers">
+        <ion-icon name="home-outline" style="font-size:30px;" [routerLink]="['/dashboard']">
+        </ion-icon>
+        Home
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="2.5" >
+      <ion-tab-button tab="">
+        <ion-icon name="reader-outline" style="font-size:30px" [routerLink]="['/orders']"></ion-icon>
+        Orders
+      </ion-tab-button>
+    </ion-col>
+
+    <ion-col class="ion-padding" size="2.5" >
+      <ion-tab-button tab="">
+        <ion-icon name="file-tray-outline" style="font-size:30px;" [routerLink]="['/products']"></ion-icon>
+        Product
+      </ion-tab-button>
+    </ion-col>
+    <ion-col class="ion-padding" size="2" style="color: #0081F7;">
+      <ion-tab-button tab="">
+        <ion-icon name="chatbubble-ellipses-outline" style="font-size:30px;" [routerLink]="['/inbox']"></ion-icon>
+        Chat
+      </ion-tab-button>
+
+    </ion-col>
+    <ion-col class="ion-padding" size="2.5">
+      <ion-tab-button tab="">
+        <ion-icon name="person-outline" style="font-size:30px" [routerLink]="['/account']"></ion-icon>
+        Account
+      </ion-tab-button>
+
+    </ion-col>
+
+
+  </ion-row>
+
+
+
+
+</ion-footer>

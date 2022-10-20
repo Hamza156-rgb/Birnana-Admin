@@ -75,6 +75,34 @@ const routes: Routes = [
     path: 'paymentcard',
     loadChildren: () => import('./paymentcard/paymentcard.module').then( m => m.PaymentcardPageModule)
   },
+  {
+    path: 'inbox',
+    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
+    path: 'product-details',
+    loadChildren: () => import('./product-details/product-details.module').then( m => m.ProductDetailsPageModule)
+  },
+  {
+    path: 'all-product',
+    loadChildren: () => import('./all-product/all-product.module').then( m => m.AllProductPageModule)
+  },
+  {
+    path: 'rider',
+    loadChildren: () => import('./rider/rider.module').then( m => m.RiderPageModule)
+  },
+  {
+    path: 'total-balance',
+    loadChildren: () => import('./total-balance/total-balance.module').then( m => m.TotalBalancePageModule)
+  },
+  {
+    path: 'stock',
+    loadChildren: () => import('./stock/stock.module').then( m => m.StockPageModule)
+  },
 ];
 
 @NgModule({
