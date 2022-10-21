@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-icon class="ion-padding" name="chevron-back-outline" style="font-size: 30px;  color: black;"
-      [routerLink]="['/search']"></ion-icon>
+      [routerLink]="['/dashboard']"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -75,37 +75,36 @@
 
 <ion-footer mode="ios" style="background-color:white;color:black">
   <ion-row>
-    
-    <ion-col class="ion-padding" size="3">
+    <ion-col class="ion-padding" size="2.5">
       <ion-tab-button tab="caregivers">
-        <ion-icon name="home-outline" style="font-size:30px; " [routerLink]="['/dashboard']"></ion-icon>
+        <ion-icon name="home-outline" style="font-size:30px;" [routerLink]="['/dashboard']">
+        </ion-icon>
+        Home
       </ion-tab-button>
-
     </ion-col>
-    <ion-col class="ion-padding" size="3">
+    <ion-col class="ion-padding" size="2.5">
       <ion-tab-button tab="">
-        <ion-icon name="search-outline" style="font-size:30px " [routerLink]="['/search']"></ion-icon>
+        <ion-icon name="reader-outline" style="font-size:30px" [routerLink]="['/orders']"></ion-icon>
+        Orders
       </ion-tab-button>
-
     </ion-col>
-
-    <ion-col class="ion-padding" size="3">
+    <ion-col class="ion-padding" size="2.5" style="color: #0081F7;">
       <ion-tab-button tab="">
-        <ion-icon name="medkit-outline" style="font-size:30px  ;color: #0081F7;" [routerLink]="['/addproduct']"></ion-icon>
+        <ion-icon name="file-tray-outline" style="font-size:30px;" [routerLink]="['/products']"></ion-icon>
+        Product
       </ion-tab-button>
-
     </ion-col>
-    <ion-col class="ion-padding" size="3">
+    <ion-col class="ion-padding" size="2">
+      <ion-tab-button tab="">
+        <ion-icon name="chatbubble-ellipses-outline" style="font-size:30px;" [routerLink]="['/inbox']"></ion-icon>
+        Chat
+      </ion-tab-button>
+    </ion-col>
+    <ion-col class="ion-padding" size="2.5">
       <ion-tab-button tab="">
         <ion-icon name="person-outline" style="font-size:30px" [routerLink]="['/account']"></ion-icon>
+        Account
       </ion-tab-button>
-
     </ion-col>
-   
-  
   </ion-row>
-
-
-
-
 </ion-footer>

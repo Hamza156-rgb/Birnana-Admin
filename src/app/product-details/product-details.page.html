@@ -1,9 +1,91 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>product-details</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
+  <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;color: black;"
+  [routerLink]="['/products']"></ion-icon>
+
+
+<ion-row class="ion-padding">
+  <ion-col>
+    <div class="ion-text-start">
+      <h3 class="first-heading">Product Details</h3>
+    </div>
+  </ion-col>
+
+  <ion-col>
+    <div class="ion-text-end">
+      <h3 class="edit"  [routerLink]="['/addproduct']">Edit Product</h3>
+    </div>
+  </ion-col>
+</ion-row>
+
+
+<ion-row class="ion-padding">
+  <ion-col size="12">
+    <div class="container">
+      <ion-img src="../assets/products/14.png" style="width: 100%;"></ion-img>
+      <div class="bottom-right">20 % Off
+        <ion-icon name="pencil-outline"></ion-icon>
+      </div>
+    </div>
+ 
+  </ion-col>
+
+  <div class="heading">
+    <h5>Nike Shoes 132 KGF</h5>
+    <h6>Product Code 5566443</h6>
+
+    <h5>Description</h5>
+    <h6>lorem ipsum is the text that can be
+      replaced with many texts and formats.</h6>
+
+      <h5>Category</h5>
+      <h6>Men - footwear</h6>
+
+      <h5>Barcode</h5>
+      <ion-img src="../assets/products/barcode.png" style="width: 100%;"></ion-img>
+  </div>
+
+ 
+
+</ion-row>
+
 
 </ion-content>
+
+
+<ion-footer mode="ios" style="background-color:white;color:black">
+  <ion-row>
+    <ion-col class="ion-padding" size="2.5">
+      <ion-tab-button tab="caregivers">
+        <ion-icon name="home-outline" style="font-size:30px;" [routerLink]="['/dashboard']">
+        </ion-icon>
+        Home
+      </ion-tab-button>
+    </ion-col>
+    <ion-col class="ion-padding" size="2.5">
+      <ion-tab-button tab="">
+        <ion-icon name="reader-outline" style="font-size:30px" [routerLink]="['/orders']"></ion-icon>
+        Orders
+      </ion-tab-button>
+    </ion-col>
+    <ion-col class="ion-padding" size="2.5" style="color: #0081F7;">
+      <ion-tab-button tab="">
+        <ion-icon name="file-tray-outline" style="font-size:30px;" [routerLink]="['/products']"></ion-icon>
+        Product
+      </ion-tab-button>
+    </ion-col>
+    <ion-col class="ion-padding" size="2">
+      <ion-tab-button tab="">
+        <ion-icon name="chatbubble-ellipses-outline" style="font-size:30px;" [routerLink]="['/inbox']"></ion-icon>
+        Chat
+      </ion-tab-button>
+    </ion-col>
+    <ion-col class="ion-padding" size="2.5">
+      <ion-tab-button tab="">
+        <ion-icon name="person-outline" style="font-size:30px" [routerLink]="['/account']"></ion-icon>
+        Account
+      </ion-tab-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>
