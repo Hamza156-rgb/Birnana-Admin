@@ -1,18 +1,24 @@
-h3 {
+.heading {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
+    letter-spacing: -0.02em;
     color: #000000;
 }
-p {
+
+.icons ion-icon {
+    padding-left: 5px;
+}
+
+.total {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     color: #c4c4c4;
 }
-h2 {
+.number {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -34,33 +40,49 @@ h2 {
     width: 60%;
     margin-left: 40%;
 }
-.green{
-color:#2FA94E;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
+.green {
+    color: #2fa94e;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
 }
-.arrow{
-    color: #2FA94E;
+.arrow {
+    color: #2fa94e;
 }
-.arrows{
-    color: #0081F7;
+.arrows {
+    color: #0081f7;
 }
-.blue{
-    color: #0081F7; 
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 100%;
+.blue {
+    color: #0081f7;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
 }
 
-h6{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-color: #000000;
+.list {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #02092a;
+}
+
+.view {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #0081f7;
+}
+
+h6 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
 }

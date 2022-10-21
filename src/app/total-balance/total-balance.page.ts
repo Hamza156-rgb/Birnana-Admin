@@ -7,9 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TotalBalancePage implements OnInit {
 
+  sales = true;
+  stock = false;
+
+
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  Topsales() {
+    this.sales = true;
+    this.stock = false;
+
+
+
+  }
+
+  Instock() {
+    this.sales = false;
+    this.stock = true;
+
+
+
+  }
+
+
 
 }

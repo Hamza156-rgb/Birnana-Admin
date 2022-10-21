@@ -1,77 +1,66 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-icon class="ion-padding" name="chevron-back-outline" style="font-size: 30px;color: black;"
-      [routerLink]="['/dashboard']"></ion-icon>
-  </ion-toolbar>
-</ion-header>
-
-
 <ion-content>
-
-
+  <ion-icon class="ion-padding-top" name="chevron-back-outline" style="font-size: 30px;color: black;"
+    [routerLink]="['/dashboard']"></ion-icon>
   <ion-row class="ion-padding">
     <ion-col>
       <div class="ion-text-start">
-        <h3>Products</h3>
-
+        <h3 class="heading">Products</h3>
       </div>
     </ion-col>
     <ion-col>
-      <div class="ion-text-end">
-        <ion-icon class="ion-padding-top" name="search" style="font-size: 30px;color: black;"></ion-icon>
-        <ion-icon class="ion-padding-top" name="notifications" style="font-size: 30px;color: #1B7CED;"></ion-icon>
-
+      <div class="ion-text-end icons" style="padding-left: 5px;">
+        <ion-icon name="qr-code-outline" style="font-size: 30px;color: black;"></ion-icon>
+        <ion-icon name="add-circle" style="font-size: 30px;color: black;" [routerLink]="['/addproduct']"></ion-icon>
+        <ion-icon class="ion-padding-top" name="notifications" style="font-size: 30px;color: black;"
+          [routerLink]="['/notifications']"></ion-icon>
       </div>
     </ion-col>
   </ion-row>
-
   <ion-row class="ion-padding">
     <ion-col>
       <div class="ion-text-start">
-        <p>Total Products</p>
-        <h2>128</h2>
+        <p class="total">Total Products</p>
+        <h2 class="number">128</h2>
         <div class="line">
           <ion-icon name="arrow-up" class="ion-padding-top arrow" style="padding-left: 5%;"></ion-icon>
           <h6 style="padding-left: 2%;" class="green">+8.00%</h6>
         </div>
-
       </div>
     </ion-col>
     <ion-col>
       <div class="ion-text-end">
-        <p>Total Products</p>
-        <h2>2,350</h2>
-
+        <p class="total">Total Products</p>
+        <h2 class="number">2,350</h2>
         <div class="lines">
           <ion-icon name="arrow-up" class="ion-padding-top arrows" style="padding-left: 5%;"></ion-icon>
           <h6 style="padding-left: 2%;" class="blue">+8.00%</h6>
         </div>
-
       </div>
     </ion-col>
   </ion-row>
-
   <ion-row class="ion-padding">
     <ion-col>
       <div class="ion-text-start">
-        <p>Products List</p>
-
-
+        <p class="list">Products List</p>
       </div>
     </ion-col>
+
+    <ion-col>
+      <div class="ion-text-end">
+        <p class="view" [routerLink]="['/all-product']">View All</p>
+      </div>
+    </ion-col>
+
+
+
   </ion-row>
-
-
   <ion-row class="ion-padding" *ngFor="let items of product">
-
     <ion-col>
       <div class="ion-text-start">
         <ion-img [src]="items.image" style="width:80%;"></ion-img>
-
       </div>
     </ion-col>
     <ion-col>
-
       <div class="ion-text-center">
         <h6> {{items.name}}</h6>
         <div style="display: flex;justify-content: center;">
@@ -86,33 +75,22 @@
     <ion-col>
       <div class="ion-text-end">
         <ion-icon name="chevron-forward-outline" slot="end" class="ion-padding-top"
-          style="font-size: 30px;color:black;"></ion-icon>
+          style="font-size: 30px;color:black;" [routerLink]="['/product-details']"></ion-icon>
       </div>
     </ion-col>
-
-
   </ion-row>
-
-
-
-
 </ion-content>
-
-
-
 
 
 
 <ion-footer mode="ios" style="background-color:white;color:black">
   <ion-row>
-
     <ion-col class="ion-padding" size="2.5">
       <ion-tab-button tab="caregivers">
         <ion-icon name="home-outline" style="font-size:30px;" [routerLink]="['/dashboard']">
         </ion-icon>
         Home
       </ion-tab-button>
-
     </ion-col>
     <ion-col class="ion-padding" size="2.5">
       <ion-tab-button tab="">
@@ -131,20 +109,12 @@
         <ion-icon name="chatbubble-ellipses-outline" style="font-size:30px;" [routerLink]="['/inbox']"></ion-icon>
         Chat
       </ion-tab-button>
-
     </ion-col>
     <ion-col class="ion-padding" size="2.5">
       <ion-tab-button tab="">
         <ion-icon name="person-outline" style="font-size:30px" [routerLink]="['/account']"></ion-icon>
         Account
       </ion-tab-button>
-
     </ion-col>
-
-
   </ion-row>
-
-
-
-
 </ion-footer>
